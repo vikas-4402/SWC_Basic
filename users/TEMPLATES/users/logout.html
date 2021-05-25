@@ -1,0 +1,8 @@
+{% extends "shop/base.html"%}
+{% block content %}
+    <form class=""  method="post">
+        {% csrf_token %}
+        <h1>Thanking For Shopping !</h1>
+        <h2>Come Again</h2>
+        <p>Want to SignIN</p><a href="{% url 'login' %}">SignIN</a>
+{% endblock content %}
