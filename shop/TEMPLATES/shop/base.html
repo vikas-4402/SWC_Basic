@@ -7,9 +7,9 @@
     </head>
     <body>
         <nav>
-            <a href="#">SHOPPER'S SITE</a>
+            <a href="{% url "home" %}">SHOPPER'S SITE</a>
             <a href="#">Cart</a>
-            <a href="#">Login</a>
+            <a href="{% url "login" %}">Login</a>
             <a href="#">SignUp</a>
         </nav>
         {% block content %} {% endblock %}
