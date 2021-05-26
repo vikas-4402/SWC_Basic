@@ -1,0 +1,8 @@
+{% extends 'shop/base.html' %}
+{% block content %}
+{% for thing in things %}
+    <div class="container inline-block box-border h-31 w-40 p-4 border-4 mx-auto ">
+        <h1>No Of "{{ thing.item.title }}" you ordered = {{thing.quantity}}</h1>
+    </div>
+{% endfor %}
+{% endblock content %}

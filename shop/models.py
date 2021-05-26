@@ -6,6 +6,7 @@ class Item(models.Model):
     title = models.CharField(max_length=200,default = None)
     price =models.IntegerField(blank=True ,null= True)
     content = models.TextField(default = None)
+    image = models.ImageField(default = 'default.jpg',upload_to="media/images")
 
     def __str__(self):
         return self.title

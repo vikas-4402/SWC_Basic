@@ -1,10 +1,11 @@
 {% extends 'shop/base.html' %}
 {% block content %}
 {% for item in items %}
-<div class="container inline-block box-border h-31 w-40 p-4 border-4 mx-auto ">
-    <img src="{{ user.profile.image.url }}" alt="">
-    <h1>{{ item.title }}</h1>
-    <h2>The Cost is {{ item.price }}INR</h2>
+<div class="container inline-block box-border h-50 w-30 p-4 border-4 mx-auto ">
+    <img src="{{ item.image.url }}" alt="No Image">
+    <a href="#"><h1>{{ item.title }}</h1></a>
+    <h2>Price:	₹{{ item.price }}.00 </h2>
+    <h4>Inclusive of all taxes</h4>
     <h3>{{ item.content }}</h3>
 </div>
 {% endfor %}
